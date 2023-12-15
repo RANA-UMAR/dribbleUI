@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes color-animation-made {
+  0% {
+    background-color: #ffda79;
+  }
+  25% {
+    background-color: #ffabe7;
+  }
+  50% {
+    background-color: #d2bcf3;
+  }
+  75% {
+    background-color: #edf3d8;
+  }
+  100% {
+    background-color: #ffda79;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-color-animation {
+  animation: color-animation-made 32s infinite ;
+  width: 330px;
+}
+/* AnimateCard.css */
+
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0px);
+    
+  }
+
+   100% {
+    transform: translateX(-100%);
+    
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.marquee-container {
+  animation: marquee-animation 32s infinite linear;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.marquee-item {
+  flex-shrink: 0;
+  margin-right: 28px;
+
+}
+
+@keyframes footerAnimate {
+  0% {
+    transform: translateX(0px);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateX(-100%);
   }
+}
+
+.footer-container {
+  animation: footerAnimate 12s linear infinite; 
+}
+
+.footerAnimate {
+  flex-shrink: 0;
+  margin-right: 28px;
+}
+.footerAnimate.paused {
+  animation-play-state: paused;
+}
+.hovered {
+  box-shadow: 6px -6px 5px 0px rgb(240, 61, 240),12px -12px 5px 0px rgb(44, 224, 224);
+  border-radius: 10px;
 }
