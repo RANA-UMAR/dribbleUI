@@ -6,19 +6,19 @@ import { FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center mx-4 mb-10">
+    <div className="flex flex-col lg:flex-row justify-around items-center mx-4 mb-10 lg:mb-0">
       <div>
         <img
           src="./images/logo.png"
           alt="logo"
           width={96}
           height={37}
-          className="m-10  "
+          className="m-10"
         />
       </div>
 
-      <div>
-        <ul className="flex space-x-8 font-semibold ">
+      <div className="lg:ml-10">
+        <ul className="flex flex-wrap justify-center lg:justify-center space-x-8 lg:space-x-10 font-semibold ">
           <li>
             <a href="/" className="hover:text-[#565564]">
               For designers
@@ -65,10 +65,10 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="flex text-2xl space-x-4">
-        <FaTwitter className="" />
-        <AiFillFacebook />
-        <FaInstagram />
+      <div className="flex justify-center lg:justify-end mt-4 lg:mt-0">
+        <FaTwitter className="mr-2" />
+        <AiFillFacebook className="mr-2" />
+        <FaInstagram className="mr-2" />
         <FaPinterest />
       </div>
     </div>

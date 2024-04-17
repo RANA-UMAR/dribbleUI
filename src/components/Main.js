@@ -9,9 +9,8 @@ const Main = () => {
           Over 3 million ready-to-work creatives!
         </h1>
       </div>
-      <h1 className="text-7xl mt-10 font-serif">Work with the world’s top</h1>
-      <h1 className="text-7xl mb-10 font-serif">creative talent.</h1>
-      <h1 className="text-2xl">
+      <h1 className="text-7xl text-center mt-10 font-serif">Work with the world’s top<br/>creative talent.</h1>
+      <h1 className="text-2xl text-center">
         Connect with millions of top-rated designers & agencies around the
         world.
       </h1>

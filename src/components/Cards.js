@@ -13,28 +13,30 @@ const Cards = () => {
           Explore inspiring designs
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.map((element, k) => (
-          <div key={k} className="mx-auto ">
+          <div key={k} className="mx-auto content-center ">
             <img
               src={element.image}
-              className="w-[348px] h-[263px] rounded-xl"
+              className="w-[328px] h-[243px] rounded-xl"
               alt=""
             />
-            <div className="py-2 flex justify-between w-[340px]">
+            <div className="py-2 flex justify-around w-[340px]">
               <img
                 src={element.smallImage}
-                className="w-[28px] rounded-full ml-3"
+                className="w-[28px] rounded-full ml-2"
                 alt=""
               />
+              
               <div className="flex">
-                <h2 className="mr-3 font-semibold">{element.title}</h2>
+                <h2 className="mr-2 font-semibold">{element.title}</h2>
                 <span className="inline-flex items-center rounded-md bg-gray-300 px-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-500/10">
                   {element.tag}
                 </span>
               </div>
-              <div className="flex">
-                <h2 className="mr-3 ">
+     
+              <div className="flex ">
+                <h2 className="mr-2 ">
                   <IoMdHeart className="inline-flex items-center text-xl" />
                   {element.like}
                 </h2>

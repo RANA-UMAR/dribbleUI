@@ -2,9 +2,9 @@ import React from "react";
 
 const LastFooter = () => {
   return (
-    <div className="flex justify-between items-center font-normal mx-6">
+    <div className="flex flex-col lg:flex-row justify-between items-center font-normal mx-6">
       <div>
-        <ul className="flex space-x-8 ">
+        <ul className="flex flex-wrap justify-center lg:justify-center  space-x-8 ">
           <li>
             <a href="/" className="hover:text-[#565564]">
               © 2023 Dribbble
@@ -31,7 +31,7 @@ const LastFooter = () => {
       </div>
 
       <div>
-        <ul className="flex space-x-8 ">
+        <ul className="flex flex-wrap justify-center lg:justify-center space-x-8 ">
           <li>
             <a href="/" className="hover:text-[#565564]">
               Jobs
